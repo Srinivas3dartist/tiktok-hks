@@ -58,17 +58,22 @@ async function exampleUsage() {
             TiktokApiFacade.getVideoByKeyword('GET', 'dance', 2)
         );
 
-        // 7. Get videos by user
-        await testAPI('7. Getting videos by user', () => 
+        // 7. Get user info
+        await testAPI('7. Getting user info', () => 
+            TiktokApiFacade.getUserInfo('GET', 'huykaiser.it')
+        );
+
+        // 8. Get videos by user
+        await testAPI('8. Getting videos by user', () => 
             TiktokApiFacade.getVideosByUser('GET', 'huykaiser.it', 2)
         );
 
-        // 8. Get similar users
-        await testAPI('8. Getting similar users', () => 
+        // 9. Get similar users
+        await testAPI('9. Getting similar users', () => 
             TiktokApiFacade.getSimilarUsers('GET', 'huykaiser.it', 3)
         );
 
-        // 9. Get user liked videos
+        // 10. Get user liked videos
         await testAPI('9. Getting user liked videos', () => 
             TiktokApiFacade.getUserLiked('GET', 'huykaiser.it', 2)
         );
@@ -94,17 +99,17 @@ async function exampleUsage() {
         );
 
         // 14. Get video comments
-        await testAPI('14. Getting video comments', () => 
+        await testAPI('15. Getting video comments', () => 
             TiktokApiFacade.getCommentsVideo('GET', 'https://www.tiktok.com/@huykaiser.it/video/7396189922417265941', 3)
         );
 
         // 15. Get video without watermark
-        await testAPI('15. Getting video without watermark', () => 
+        await testAPI('16. Getting video without watermark', () => 
             TiktokApiFacade.getVideoNoWaterMark('GET', 'https://www.tiktok.com/@huykaiser.it/video/7396189922417265941', 1)
         );
 
         // 16. Using direct Tiktok class instance
-        await testAPI('16. Testing direct Tiktok class instance', () => {
+        await testAPI('17. Testing direct Tiktok class instance', () => {
             const tiktok = new Tiktok();
             return tiktok.getRegions('GET');
         });

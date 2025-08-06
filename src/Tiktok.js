@@ -18,6 +18,7 @@ class Tiktok {
     path_api_get_user_following = "api/user/following";
     path_api_get_user_followers = "api/user/followers";
     path_api_get_user_feed_videos = "api/user/posts";
+    path_api_get_user_info = "api/user/info";
     path_api_get_video_no_watermark = "api";
 
     /**
@@ -349,6 +350,27 @@ class Tiktok {
             console.error(e);
         }
         return [];
+    }
+
+    /**
+     * Get user info by unique_id
+     * @param {string} method - HTTP method
+     * @param {string} unique_id - User unique ID
+     * @return {Promise<Object>}
+     */
+    async getUserInfo(method, unique_id) {
+        try {
+            const query = { unique_id };
+            const endpoint = buildExternalUrl(this.host, this.path_api_get_user_info, query);
+            const response = await this.client({ method, url: endpoint });
+            const contents = response.data;
+            if (contents.msg === "success") {
+                return contents.data;
+            }
+        } catch (e) {
+            console.error(e);
+        }
+        return {};
     }
 
     /**

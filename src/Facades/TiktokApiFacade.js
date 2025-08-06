@@ -124,6 +124,13 @@ class TiktokApiFacade {
     }
 
     /**
+     * Get User Info
+     */
+    static async getUserInfo(method, unique_id) {
+        return await this.getFacadeRoot().getUserInfo(method, unique_id);
+    }
+
+    /**
      * Get Video No WaterMark
      */
     static async getVideoNoWaterMark(method, tiktok_url, hd = 1) {
