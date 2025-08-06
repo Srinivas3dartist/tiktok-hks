@@ -1,6 +1,6 @@
 {
     "name": "tiktok-hks",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Full API Tiktok Data - JavaScript Version by HKS",
     "main": "index.js",
     "keywords": [
