@@ -102,6 +102,7 @@ All methods are async and return Promises:
 
 ### User Methods
 - `getSimilarUsers(method, unique_id, count)` - Get similar users
+- `getUserInfo(method, unique_id)` - Get Info users
 - `getUserLiked(method, unique_id, count, cursor)` - Get user's liked videos
 - `getUserFollowing(method, user_id, count, time, cursor)` - Get user's following list
 - `getUserFollowers(method, user_id, count, time, cursor)` - Get user's followers list
