@@ -1,6 +1,6 @@
 {
     "name": "tiktok-hks",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Full API Tiktok Data - JavaScript Version by HKS",
     "main": "index.js",
     "keywords": [
@@ -34,7 +34,8 @@
         "test:real": "node test-real.js",
         "demo": "node demo-npm.js",
         "start": "node example.js",
-        "prepublishOnly": "npm test"
+        "prepublishOnly": "npm test",
+        "deloy": "npm run prepublishOnly && npm publish"
     },
     "repository": {
         "type": "git",
