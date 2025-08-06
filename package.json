@@ -1,0 +1,56 @@
+{
+    "name": "tiktok-hks",
+    "version": "1.0.0",
+    "description": "Full API Tiktok Data - JavaScript Version by HKS",
+    "main": "index.js",
+    "keywords": [
+        "tiktok-api",
+        "tiktok-no-watermark",
+        "tiktok-data",
+        "tiktok",
+        "tikwm",
+        "tiktok-hks",
+        "hks",
+        "javascript",
+        "nodejs"
+    ],
+    "author": {
+        "name": "Nguyễn Văn Huy - HuyKaiser",
+        "email": "nguyenhuy34789@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^1.6.0",
+        "lodash": "^4.17.21",
+        "tiktok-hks": "^1.0.0"
+    },
+    "devDependencies": {
+        "jest": "^29.0.0"
+    },
+    "scripts": {
+        "test": "jest",
+        "test:unit": "jest test.js",
+        "test:mock": "jest test-mock.js",
+        "test:real": "node test-real.js",
+        "demo": "node demo-npm.js",
+        "start": "node example.js",
+        "prepublishOnly": "npm test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hksvn/tiktok-hks.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hksvn/tiktok-hks/issues"
+    },
+    "homepage": "https://github.com/hksvn/tiktok-hks#readme",
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [
+        "src/",
+        "index.js",
+        "README.md",
+        "LICENSE"
+    ]
+}

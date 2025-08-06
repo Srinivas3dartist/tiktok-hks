@@ -1,0 +1,44 @@
+# Development files
+example.js
+*.test.js
+test/
+tests/
+.git/
+.gitignore
+
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+.nyc_output
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional files
+README_JS.md
+composer.json
+composer.lock
+vendor/
+
+# PHP files (original source)
+*.php
